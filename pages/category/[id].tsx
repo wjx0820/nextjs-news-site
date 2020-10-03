@@ -20,7 +20,6 @@ export const getStaticProps: GetStaticProps<CategoryProps> = async ({
 }
 
 export async function getStaticPaths() {
-	console.log("getStaticPaths -> paths", paths)
 	return { paths, fallback: true }
 }
 
