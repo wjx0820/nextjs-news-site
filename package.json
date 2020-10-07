@@ -6,7 +6,8 @@
 		"build": "next build",
 		"start": "next start",
 		"serve": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
-		"dev": "concurrently --kill-others \"npm run serve\" \"next\""
+		"dev": "concurrently --kill-others \"npm run serve\" \"next\"",
+		"deploy": "npm run serve & npm run build"
 	},
 	"dependencies": {
 		"@types/react-redux": "^7.1.9",
